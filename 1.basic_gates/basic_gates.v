@@ -12,7 +12,7 @@ module basic_gates(
     output xnor_out
     );
 
-	 // data flow level modelling
+	
 	 assign and_out = a & b;
 	 assign or_out = a | b;
 	 assign not_out = !a;
