@@ -5,10 +5,10 @@ module half_subtractor(
 	// inputs
 	input a,b,
 	// outputs
-	output sub,borrow
+	output dif,borrow
 	);
 	
-	assign sub = a ^ b;
+	assign dif = a ^ b;
 	assign borrow = (~a)&b;
 	
 endmodule
