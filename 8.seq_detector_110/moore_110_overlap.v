@@ -15,7 +15,7 @@ module k,rst,x,z);
   // internal registers declaration
   reg [1:0] p_state, n_state;
   
-  //present state logic - sequential
+  //present state logic 
   always@(posedge clk or posedge rst)	// async reset
     begin
       if(rst)
@@ -24,10 +24,10 @@ module k,rst,x,z);
         p_state <= n_state;
     end
   
-  // next state logic - combinational
+  // next state logic 
   always@(p_state or x)
     begin
-      n_state = s0;		// default assignment for next state register to avoid latches
+      n_state = s0;		
       case(p_state)
         s0: begin
           if(!x)
