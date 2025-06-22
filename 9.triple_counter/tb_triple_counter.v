@@ -14,9 +14,8 @@ module tb_triple_counter;
 	
 	task display;
 		begin
-            #10;
+                	#10;
 			$display("Time=%t | Count=%t",$time,count);
-           
 		end
 	endtask
 	
